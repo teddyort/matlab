@@ -1,0 +1,13 @@
+plot.m 
+Line 256
+	Comment out to fix placing the figure off the screen
+
+Line 198
+    if isempty(qq)  %%Added by Teddy to shortcut home position plotting
+        qq = zeros(1,n);
+    end             %%End addition by Teddy
+	
+	
+Link.m
+Line352
+	Changed by Teddy because this overwrites the options we know nothing about the dynamics
