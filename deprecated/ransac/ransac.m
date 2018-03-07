@@ -130,7 +130,7 @@ function [M, inliers] = ransac(x, fittingfn, distfn, degenfn, s, t, feedback, ..
     
     [~, npts] = size(x);
     
-    p = 0.999;         % Desired probability of choosing at least one sample
+    p = 0.9999;         % Desired probability of choosing at least one sample
                       % free from outliers (probably should be a parameter)
 
     bestM = NaN;      % Sentinel value allowing detection of solution failure.
